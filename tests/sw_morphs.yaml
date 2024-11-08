@@ -1,0 +1,518 @@
+# test_cases.yaml
+test_cases:
+  - input:  Unahitaji kuona kwangu, kaka. Nimejenga nyumba nzuri sana
+    expected: ['▁U', 'na', 'hitaj', 'i', '▁ku', 'on', 'a', '▁kwangu,', '▁kaka.', '▁Ni', 'me', 'jeng', 'a', '▁nyumba', '▁n', 'zuri', '▁sana']
+    description: Example sentences
+
+  - input: kuona
+    expected: ["▁ku", "on", "a"]
+    description: to see
+
+  - input: nina
+    expected: ["▁ni", "n", "a"]
+    description: I have
+
+  - input: sina
+    expected: ["▁si", "n", "a"]
+    description: I don't have
+
+  - input: ina
+    expected: ["▁i", "n", "a"]
+    description: it has
+
+  - input: tuna
+    expected: ["▁tu", "n", "a"]
+    description: we have
+
+  - input: hatuna
+    expected: ["▁hatu", "n", "a"]
+    description: we don't have
+
+  - input: ninakupenda
+    expected: ["▁ni", "na", "ku", "pend", "a"]
+    description: I love you
+
+  - input: watoto
+    expected: ["▁wa", "toto"]
+    description: children
+
+  - input: ninapika
+    expected: ["▁ni", "na", "pik", "a"]
+    description: I am cooking
+
+  - input: tutasoma
+    expected: ["▁tu", "ta", "som", "a"]
+    description: we will read
+
+  - input: nimepika
+    expected: ["▁ni", "me", "pik", "a"]
+    description: I have cooked
+
+  - input: nyumbani
+    expected: ["▁nyumba", "ni"]
+    description: at home
+
+  - input: maendeleo
+    expected: ["▁ma", "endele", "o"]
+    description: development
+
+  - input: mzuri
+    expected: ["▁m", "zuri"]
+    description: good (singular)
+
+  - input: wazuri
+    expected: ["▁wa", "zuri"]
+    description: good (plural)
+
+  - input: xyz
+    expected: ["▁xyz"]
+    description: unknown, return unchanged word
+
+  - input: alipika
+    expected: ["▁a", "li", "pik", "a"]
+    description: he/she cooked
+
+  - input: atakuja
+    expected: ["▁a", "ta", "kuj", "a"]
+    description: he/she will come
+
+  - input: umependa
+    expected: ["▁u", "me", "pend", "a"]
+    description: you have loved
+
+  - input: alikupenda
+    expected: ["▁a", "li", "ku", "pend", "a"]
+    description: he/she loved you
+
+  - input: wanapika
+    expected: ["▁wa", "na", "pik", "a"]
+    description: they are cooking
+
+  - input: marafiki
+    expected: ["▁ma", "rafiki"]
+    description: friends
+
+  - input: mrembo
+    expected: ["▁m", "rembo"]
+    description: beautiful (singular)
+
+  - input: warembo
+    expected: ["▁wa", "rembo"]
+    description: beautiful (plural)
+
+  - input: jumba
+    expected: ["▁jumba"]
+    description: large house
+
+  - input: kitabu
+    expected: ["▁ki", "tabu"]
+    description: book
+
+  - input: nyota
+    expected: ["▁nyota"]
+    description: star
+
+  - input: nyumbani
+    expected: ["▁nyumba", "ni"]
+    description: at home
+
+  - input: shuleni
+    expected: ["▁shule", "ni"]
+    description: at school
+
+  - input: wachezaji
+    expected: ["▁wa", "chezaji"]
+    description: players
+
+  - input: kupenda
+    expected: ["▁ku", "pend", "a"]
+    description: to love
+
+  - input: kupika
+    expected: ["▁ku", "pik", "a"]
+    description: to cook
+
+  - input: kuelezwa
+    expected: ["▁ku", "elez", "wa"]
+    description: to be explained
+
+  - input: kunywa
+    expected: ["▁ku", "nyw", "a"]
+    description: to drink
+
+  - input: nitaandika
+    expected: ["▁ni", "ta", "andik", "a"]
+    description: I will write
+
+  - input: siwezi
+    expected: ["▁si", "wez", "i"]
+    description: I cannot
+
+  - input: umesoma
+    expected: ["▁u", "me", "som", "a"]
+    description: you have read
+
+  - input: uko
+    expected: ["▁u", "ko"]
+    description: you are
+
+  - input: anawafundisha
+    expected: ["▁a", "na", "wa", "fundish", "a"]
+    description: he/she teaches them
+
+  - input: kwa
+    expected: ["▁kwa"]
+    description: for/by
+
+  - input: nikaandika
+    expected: ["▁ni", "ka", "andik", "a"]
+    description: I wrote
+
+  - input: tumefika
+    expected: ["▁tu", "me", "fik", "a"]
+    description: we have arrived
+
+  - input: wapi
+    expected: ["▁wapi"]
+    description: where
+
+  - input: nataka
+    expected: ["▁na", "tak", "a"]
+    description: I want
+
+  - input: ninataka
+    expected: ["▁ni", "na", "tak", "a"]
+    description: I want
+
+  - input: watakufa
+    expected: ["▁wa", "ta", "kuf", "a"]
+    description: they will die
+
+  - input: nitakupata
+    expected: ["▁ni", "ta", "ku", "pat", "a"]
+    description: I will find you
+
+  - input: kusoma
+    expected: ["▁ku", "som", "a"]
+    description: to read
+
+  - input: kutosoma
+    expected: ["▁ku", "to", "som", "a"]
+    description: not to read
+
+  - input: Kusoma
+    expected: ["▁Ku", "som", "a"]
+    description: case sensitivity
+
+  - input: sisome
+    expected: ["▁si", "som", "e"]
+    description: I do not read
+
+  - input: sikusoma
+    expected: ["▁si", "ku", "som", "a"]
+    description: I did not read
+
+  - input: ningependa
+    expected: ["▁ni", "nge", "pend", "a"]
+    description: I would like to
+
+  - input: ningelipenda
+    expected: ["▁ni", "nge", "li", "pend", "a"]
+    description: I would like to
+
+  - input: umeshafanya
+    expected: ["▁u", "me", "sha", "fany", "a"]
+    description: You have already done
+
+  - input: mwanaume
+    expected: ["▁mwana", "ume"]
+    description: man
+
+  - input: utakapowasili
+    expected: ["▁u", "ta", "ka", "po", "wasil", "i"]
+    description: When you will arrive
+
+  - input: sikuandika
+    expected: ["▁si", "ku", "andik", "a"]
+    description: I did not write
+
+  - input: hamkupika
+    expected: ["▁ham", "ku", "pik", "a"]
+    description: you (plural) did not cook
+
+  - input: atakapokuwa
+    expected: ["▁a", "ta", "ka", "po", "kuw", "a"]
+    description: when he/she will be
+
+  - input: tutakapokutana
+    expected: ["▁tu", "ta", "ka", "po", "kutan", "a"]
+    description: when we will meet
+
+  - input: kukaa
+    expected: ["▁ku", "ka", "a"]
+    description: to stay/sit
+
+  - input: vipi
+    expected: ["▁vipi"]
+    description: how
+
+  - input: wangapi
+    expected: ["▁wangapi"]
+    description: how many (people)
+
+  - input: wangekuwa
+    expected: ["▁wa", "nge", "kuw", "a"]
+    description: they would have been
+
+  - input: Waliozaliwa
+    expected: ["▁Wa", "li", "o", "zali", "wa"]
+    description: they would have been
+
+  - input: Waliofariki
+    expected: ["▁Wa", "li", "o", "farik", "i"]
+    description: those who died
+
+  - input: Mahali
+    expected: ["▁Ma", "hali"]
+    description: undefined place
+
+  - input: pahali
+    expected: ["▁pa", "hali"]
+    description: definite place
+
+  - input: kwanza
+    expected: ["▁kw", "anz", "a"]
+    description: to begin, first
+
+  - input: kwisha
+    expected: ["▁kw", "ish", "a"]
+    description: to finish
+
+  - input: kwona
+    expected: ["▁kw", "on", "a"]
+    description: to see
+
+  - input: kweza
+    expected: ["▁kw", "ez", "a"]
+    description: to lift, to raise
+
+  - input: kwangalia
+    expected: ["▁kw", "angal", "ia"]
+    description: to look, to watch
+
+  - input: kwikilia
+    expected: ["▁kw", "ikil", "ia"]
+    description: to put
+
+  - input: wangu
+    expected: ["▁w", "angu"]
+    description: mine
+
+  - input: yako
+    expected: ["▁y", "ako"]
+    description: yours
+
+  - input: chake
+    expected: ["▁ch", "ake"]
+    description: his/her
+
+  - input: lenye
+    expected: ["▁l", "enye"]
+    description: that has (relational pronoun)
+
+  - input: chenye
+    expected: ["▁ch", "enye"]
+    description: that has (relational pronoun)
+
+  - input: ikisemwa
+    expected: ["▁i", "ki", "sem", "wa"]
+    description: if it is said
+
+  - input: kujifunza
+    expected: ["▁ku", "ji", "funz", "a"]
+    description: to learn (on their own)
+
+  - input: kutojifunza
+    expected: ["▁ku", "to", "ji", "funz", "a"]
+    description: not to learn (on their own)
+
+  - input: tutaonana
+    expected: ["▁tu", "ta", "on", "an", "a"]
+    description: we will see each other
+
+  - input: alivuta
+    expected: ["▁a", "li", "vut", "a"]
+    description: he pulled it
+
+  - input: akavuta
+    expected: ["▁a", "ka", "vut", "a"]
+    description: then he pulled it
+
+  - input: akijivuta
+    expected: ["▁a", "ki", "ji", "vut", "a"]
+    description: while he is pulling himself
+
+  - input: alipokuwa
+    expected: ["▁a", "li", "po", "kuw", "a"]
+    description: when he was
+
+  - input: kimefika
+    expected: ["▁ki", "me", "fik", "a"]
+    description: it has arrived
+
+  - input: yanafika
+    expected: ["▁ya", "na", "fik", "a"]
+    description: they arrive or it arrives (class 8)
+
+  - input: atapiga
+    expected: ["▁a", "ta", "pig", "a"]
+    description: he will hit
+
+  - input: ninaangalia
+    expected: ["▁ni", "na", "angal", "ia"]
+    description: I'm looking at
+
+  - input: anasafisha
+    expected: ["▁a", "na", "safish", "a"]
+    description: he's cleaning
+
+  - input: anakimbia
+    expected: ["▁a", "na", "kimb", "ia"]
+    description: run away
+
+  - input: tunakumbuka
+    expected: ["▁tu", "na", "kumbuk", "a"]
+    description: remember
+
+  - input: anasikia
+    expected: ["▁a", "na", "sik", "ia"]
+    description: he can hear
+
+  - input: yanapata
+    expected: ["▁ya", "na", "pat", "a"]
+    description: they are receiving
+
+  - input: nitasafiri
+    expected: ["▁ni", "ta", "safir", "i"]
+    description: I will travel
+
+  - input: ninabaki
+    expected: ["▁ni", "na", "bak", "i"]
+    description: I remain
+
+  - input: nijifunze
+    expected: ["▁ni", "ji", "funz", "e"]
+    description: I should learn
+
+  - input: Sitajichukua
+    expected: ["▁Si", "ta", "ji", "chuku", "a"]
+    description: I myself will not take for you.
+
+  - input: usipige
+    expected: ["▁u", "si", "pig", "e"]
+    description: do not hit!
+
+  - input: wowote
+    expected: ["▁wo", "wo", "te"]
+    description: anything (class 2)
+
+  - input: popote
+    expected: ["▁po", "po", "te"]
+    description: anywhere
+
+  - input: lolote
+    expected: ["▁lo", "lo", "te"]
+    description: anywhere (class 5)
+
+  - input: ikihitajika
+    expected: ["▁i", "ki", "hitaj", "ika"]
+    description: if it is needed, if it becomes necessary.
+
+  - input: kinachohitajika
+    expected: ["▁ki", "na", "cho", "hitaj", "ika"]
+    description: that which is needed"
+
+
+  - input: utanilipa
+    expected: ["▁u", "ta", "ni", "lip", "a"]
+    description: you will pay me
+
+  - input: chakula
+    expected: [ "▁cha", "kul", "a" ]
+    description: food, from the root "kula" (to eat), with class 7 prefix "cha"
+
+  - input: kifaa
+    expected: [ "▁ki", "fa", "a" ]
+    description: tool or device, from the root "faa" (to be useful), with class 7 prefix "ki"
+
+  - input: vitabu
+    expected: [ "▁vi", "tabu" ]
+    description: books, plural of "kitabu" (book), with class 8 prefix "vi"
+
+  - input: malazi
+    expected: [ "▁ma", "laz", "i" ]
+    description: accommodation or shelter, from the root "laza" (to lay down), with class 6 prefix "ma"
+
+  - input: mapato
+    expected: [ "▁ma", "pat", "o" ]
+    description: income or earnings, from the root "pata" (to get or receive), with class 6 prefix "ma"
+
+  - input: mabaki
+    expected: [ "▁ma", "bak", "i" ]
+    description: remnants or leftovers, from the root "baki" (to remain), with class 6 prefix "ma"
+
+  - input: mwanzo
+    expected: [ "▁mw", "anz", "o" ]
+    description: beginning or start, from the root "anza" (to start), with class 3 prefix "mw"
+
+  - input: matumizi
+    expected: [ "▁ma", "tum", "izi" ]
+    description: usage or application, from the root "tumia" (to use), with class 6 prefix "ma"
+
+  - input: majibu
+    expected: [ "▁ma", "jib", "u" ]
+    description: answers or responses, from the root "jibu" (to answer), with class 6 prefix "ma"
+
+  - input: maendeleo
+    expected: [ "▁ma", "endele", "o" ]
+    description: development or progress, from the root "endelea" (to continue or progress), with class 6 prefix "ma"
+
+  - input: nyingi
+    expected: [ "▁ny", "ingi"]
+    description: many (often for Class 10 nouns, e.g., "ndizi nyingi" - many bananas)
+
+  - input: mwingi
+    expected: [ "▁mw", "ingi"]
+    description: many
+
+  - input: wingi
+    expected: [ "▁w", "ingi"]
+    description:  much/many (general, sometimes used with Class 11 nouns)
+
+  - input: mwingine
+    expected: [ "▁mw", "ingine"]
+    description: another/other (used in plural or singular, e.g., "mtu mwingine" - another person)
+
+  - input: wote
+    expected: [ "▁w", "ote"]
+    description: watu wote -> all people
+
+  - input: chote
+    expected: [ "▁ch", "ote"]
+    description: chakula chote -> the whole food
+
+  - input: mote
+    expected: [ "▁m", "ote"]
+    description: Mwili mote -> the whole body
+
+  - input: pote
+    expected: [ "▁p", "ote"]
+    description: everywhere
+
+  - input: ambao
+    expected: [ "▁amba", "o"]
+    description: those who
+
+  - input: ambavyo
+    expected: [ "▁amba", "vyo"]
+    description: things that
