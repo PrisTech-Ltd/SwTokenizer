@@ -13,6 +13,8 @@ Currently available Large Language Models don't tokenize text on such a semantic
 The model embeddings of the tokens won't reflect this semantic knowledge about Swahili. The word will be probably tokenized into a token sequence, for example, like "kinac", "ho", "hit", "aji", "ka".
 Using a semantic tokenizer for the Swahili language should allow us building a more proficient Swahili-speaking LLM model because the predicted token sequences will take the semantic meaning of the morphemes "ki", "na", etc. into account.
 
+Another reason for the creating this tool was that common tokenizers such as Spacy or Snowball don't support Swahili.  So this morphological tokenizer, that is compatible with Google Gemma tokenization, fills a gap.
+
 # Installation 
 
 `poetry install`
